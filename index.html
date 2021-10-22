@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="root">
+			<div class="menu">
+				<div class="eraser" title="橡皮">
+					<img src="./img/eraser.png" >
+				</div>
+				
+				<div class="graph">
+					<div class="text" title="文本">
+						<img src="./img/text.png" >
+					</div>
+					<div class="brush " title="画笔">
+						<img src="./img/brush.png" >
+					</div>
+					<div class="line current" title="直线"></div>
+					<div class="circle " title="圆形"></div>
+					<div class="ellipse " title="椭圆"></div>
+					<div class="rectangle " title="矩形"></div>
+					<div class="rectangle-corner " title="圆角矩形"></div>
+					<div class="square " title="正方形"></div>
+				</div>
+				<div class="size" title="粗细">
+					<div class="line-size"></div>
+					<div class="select-size">
+						<div class="current-size">
+							<span></span>
+						</div>
+						<div>
+							<span></span>
+						</div>
+						<div>
+							<span></span>
+						</div>
+						<div>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="color" title="颜色">
+					<input type="color">
+				</div>
+				<div class="drawing-zise">
+					<span style="font-size: 22px; color: #000000;">画板大小</span>
+					<span>宽度:</span>
+					<input type="text" class="drawing-width" placeholder="800"/>
+					<span>高度:</span>
+					<input type="text" class="drawing-height" placeholder="500" />
+					<button type="button" class="modification" style=" margin-left: 10px;font-size: 16px; color: #000000;">修改</button>
+				</div>
+				<a class="download">
+					<img src="./img/download.png" >
+				</a>
+			</div>
+			<div class="drawing">
+				<canvas id="canvas" width="800" height="500"></canvas>
+				<textarea rows="1" cols="10" class="text-input"></textarea>
+			</div>
+			<div class="prompt-pop-up">
+				<h5>你的画板内容没有下载，是否下载！</h5>
+				<button type="button" class="cancel">取消</button>
+				<button type="button" class="confirm">确定</button>
+			</div>
+		</div>
+		<script src="./js/drawing.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
